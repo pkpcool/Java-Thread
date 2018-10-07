@@ -16,8 +16,8 @@ public class ThreadMain {
 		/**
 		 * Initializing the threads and running
 		 */
-		Thread thread1 = new Thread(new MyThread(" One "));
-		Thread thread2 = new Thread(new MyThread(" two "));
+		Thread thread1 = new Thread(new MyRunnable(" One "));
+		Thread thread2 = new Thread(new MyRunnable(" two "));
 		
 		thread1.start();
 		thread2.start();
